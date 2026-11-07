@@ -64,6 +64,10 @@ A missed day means the next session is just the next session. Overdue Redo cards
 
 3 of 5 → next sprint’s goal is 4. 5 with room to spare → 6. The number describes you; you don’t chase it.
 
-## test
+## Testing
 
 run `npm test` to test code
+
+## Process
+
+This is a self-structured practice repo where I do all the work, studying, learnings, failures, successes, and all that is required to learn data structures and algorithms. In the background, Claude is connected to a personal trello board via mcp. Claude is able to write tickets for me, then review the code I've written.
