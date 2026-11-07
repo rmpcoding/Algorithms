@@ -3,14 +3,18 @@ import assert from "node:assert/strict";
 
 import { containsSeven } from "../containsSeven.js";
 
-test("containsSeven should pass with a 7 inside the input array", () => {
+test("should return true when a 7 is inside the input array", () => {
   assert.equal(containsSeven([1, 2, 3, 4, 5, 6, 7]), true);
 });
 
-test("containsSeven should fail if there is no 7 inside the input array", () => {
-  assert.equal(containsSeven([]), false);
+test("should return false if there is no 7 inside the input array", () => {
+  assert.equal(containsSeven([1, 2, 3]), false);
 });
 
-test("containsSeven should pass if there is more than one 7 inside the input array", () => {
+test("should return true if there is more than one 7 inside the input array", () => {
+  assert.equal(containsSeven([1, 2, 7, 7]), true);
+});
+
+test("should return false if the input array is empty", () => {
   assert.equal(containsSeven([1, 2, 7, 7]), true);
 });

@@ -15,7 +15,7 @@ test("uniqueValues should return a Set of an array's values", () => {
 
 test("uniqueValues should return a new set with nothing inside if there is no input array", () => {
   const arr = [];
-  const set = new Set(arr);
+  const set = uniqueValues(arr);
 
   assert.deepEqual([...set], arr); // turn set back into an array
   assert.deepEqual([...set].length, 0);
@@ -28,4 +28,7 @@ test("uniqueValues should return the unique number if there is only one value re
   assert.equal(set.has(7), true);
   assert.deepEqual([...set].length, 1); // turn set back into an array
   assert.deepEqual([...set][0], 7);
+
+  // nicer syntax
+  assert.deepEqual(uniqueValues(arr), new Set([7]));
 });
