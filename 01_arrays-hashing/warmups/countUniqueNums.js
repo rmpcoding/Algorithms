@@ -14,7 +14,7 @@ export const countUniqueNums = (inputArr) => {
 
   const uniqueElementsArr = [...set];
 
-  return uniqueElementsArr.length + 1;
+  return uniqueElementsArr.length;
 };
 
 // fin 1:35 pm.
