@@ -6,10 +6,6 @@
 // return the length of the array
 
 export const countUniqueNums = (inputArr) => {
-  if (!inputArr) {
-    return 0;
-  }
-
   const set = new Set(inputArr);
 
   const uniqueElementsArr = [...set];

@@ -7,10 +7,6 @@
 
 // 1:40
 export const charFrequency = (str) => {
-  if (!str) {
-    return new Map();
-  }
-
   const map = new Map();
 
   for (let i = 0; i < str.length; i++) {
