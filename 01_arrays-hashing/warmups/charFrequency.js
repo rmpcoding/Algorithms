@@ -6,19 +6,18 @@
 // return map when done
 
 // 1:40
-export const charFrequency = (inputArr) => {
-  if (!inputArr) {
+export const charFrequency = (str) => {
+  if (!str) {
     return new Map();
   }
 
   const map = new Map();
-  let count = 1;
 
-  for (let i = 0; i < inputArr.length; i++) {
-    if (map.has(inputArr[i])) {
-      map.set(inputArr[i], map.get(inputArr[i]) + 1);
+  for (let i = 0; i < str.length; i++) {
+    if (map.has(str[i])) {
+      map.set(str[i], map.get(str[i]) + 1);
     } else {
-      map.set(inputArr[i], count);
+      map.set(str[i], 1);
     }
   }
 
