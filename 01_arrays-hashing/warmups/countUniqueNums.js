@@ -3,7 +3,7 @@
 // approach
 // turn input array into a set
 // take set, return to an array
-// return the length of the array, plus 1 (because array's start at 0)
+// return the length of the array
 
 export const countUniqueNums = (inputArr) => {
   if (!inputArr) {
