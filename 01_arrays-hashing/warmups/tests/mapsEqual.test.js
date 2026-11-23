@@ -6,33 +6,32 @@ import { mapsEqual } from "../mapsEqual.js";
 // mapsEqual(a, b) → true if two Maps have the same keys with the same values.
 // TODO: erase the todo.
 
-test.todo(
-  "should return true for two Maps that have the same keys with the same values",
-  () => {
-    const a = new Map([["a", 1]]);
-    const b = new Map([["a", 1]]);
-  },
-);
+test("should return true for two Maps that have the same keys with the same values", () => {
+  const a = new Map([["a", 1]]);
+  const b = new Map([["a", 1]]);
 
-test.todo(
-  "should return false for two Maps that have different keys with the same values",
-  () => {
-    const a = new Map([[1, 1]]);
-    const b = new Map([["1", 1]]);
-  },
-);
+  assert.deepEqual(mapsEqual(a, b), true);
+});
 
-test.todo(
-  "should return false for two Maps that have the same keys but different values",
-  () => {
-    const a = new Map([["a", 1]]);
-    const b = new Map([["a", 2]]);
-  },
-);
+test("should return false for two Maps that have different keys with the same values", () => {
+  const a = new Map([[1, 1]]);
+  const b = new Map([["1", 1]]);
 
-test.todo("should return true for two empty Maps", () => {
+  assert.deepEqual(mapsEqual(a, b), false);
+});
+
+test("should return false for two Maps that have the same keys but different values", () => {
+  const a = new Map([["a", 1]]);
+  const b = new Map([["a", 2]]);
+
+  assert.deepEqual(mapsEqual(a, b), false);
+});
+
+test("should return true for two empty Maps", () => {
   const a = new Map();
   const b = new Map();
+
+  assert.deepEqual(mapsEqual(a, b), true);
 });
 
 /*

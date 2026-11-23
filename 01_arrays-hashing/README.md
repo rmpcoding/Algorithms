@@ -4,18 +4,29 @@ Just finished both countUniqueNums and charFrequency problems. countUniqueNums, 
 
 ## Pitfalls I hit
 
+From 11/23/2026
 
+What I attempted for `mapsEqual` warmup:
+
+// take map properties, loop over them
+// store them inside one object
+// take each map, loop and compare with the big object
+// if one comparison doesn't match for either map, that means we return false
+
+- Getting back into this space after over a week off; it was dusting myself off again.
+- Map() methods and properties, that was something I haven't used in a long time, and I quite frankly forgot how to use some of them (which ones are iterable, which ones aren't, which ones I should use and shouldn't use, etc...).
+- Trying something differently. Today I got stuck. Will go ahead and rest on it instead of trying to power through. Tomorrow I try again. This slow learning process will (hopefully and theoretically) help me understand deeply in the long run.
 
 From 11/08/2026
+
 - Testing, most notably the describe sentence. This is OK though. It's a muscle I'm still exercising. It's similar to naming variables: challenging but worthwhile when you can get it down.
 - Testing, still learning the syntax. Wasn't a major setback, but I did have shaky confidence writing Map() tests.
 - charFrequency and the Map's methods. While they're relatively easy, I had spent a good while on this problem clearing the dust out of my brain. It felt good that I finally reached a solution without needing to look up anything.
 - Writing out the tests before I solved the problem. It's good that I'm able write tests beforehand, it's just that it certainly eats up into the problem solving portion of the problem solving window. Still, I'm good with this. I want to test before writing code.
 - Forgot to start timing myself on the first problem, though I'm sure it took maybe but 3 minutes to solve for that one (countUniqueNums).
 
-
-
 From 11/07/2026
+
 - Testing. Took time to get the syntax correct. Got stuck for a bit because I didn't have the second argument in the assert method. Haha.
 - Lack of quality input from ticket. Had to make assumptions on the fly (edge cases). For example, ticket shows what goes in, but it doesn't explicitly say what will NOT go in. That's okay, this is a muscle I want to develop as well.
 - Testing abilities. Syntax wasn't the only thing. This is my first real case of test-driven development, so it's a muscle I haven't practiced enough yet.
