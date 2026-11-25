@@ -4,6 +4,10 @@ Just finished both countUniqueNums and charFrequency problems. countUniqueNums, 
 
 ## Pitfalls I hit
 
+From 11/24/2026
+
+Today was better. I thought though a solution that was better (I think) than yesterday's propsed solution. This was better because I used two of the same maps each time with the map's methods. Anyways, I went over time. I got close, but in the end, the forEach and conditional return was what tripped me up. That is something I'll need to watch out going forward. Funny, I was really good at technical stuff like this in JavaScript and even tutored it really well. I'm still dusting off, and I'm glad I'm doing so because in the age of AI, it's easy to forget the fundamentals. Still, tomorrow will hold a better day. 
+
 From 11/23/2026
 
 What I attempted for `mapsEqual` warmup:

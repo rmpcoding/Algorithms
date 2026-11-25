@@ -1,29 +1,27 @@
-// start at 2:11 pm.
-
-// take map properties, loop over them
-// store them inside one object
-// take each map, loop and compare with the big object
-// if one comparison doesn't match for either map, that means we return false
+// starts at 10:14 pm
 
 export const mapsEqual = (a, b) => {
-  const obj = {};
+  if (a.size !== b.size) {
+    return false;
+  }
 
-  const array = a.entries();
-
-  console.log("array: ", array);
-
-  array.forEach((element) => {
-    console.log("element[0]", element[0]);
-
-    obj[element[0]] = element[1];
+  a.forEach((value, key) => {
+    console.log("map a key: ", key);
+    console.log("map a value: ", value);
+    console.log("map b.has() key: ", b.has(key));
+    console.log("map b.get() val: ", b.get(key));
+    console.log("b.has(key): ", b.has(key));
+    console.log("(b.get(key) !== value)", b.get(key) !== value);
+    if (b.has(key) === false) {
+      return false;
+    }
+    if (b.get(key) !== value) {
+      console.log("should hit this");
+      return false;
+    }
   });
 
-  console.log("object: ", obj);
+  return true;
 };
 
-let map = new Map();
-
-map.set("a", 1);
-map.set("b", 2);
-
-mapsEqual(map);
+// end at 10:39
